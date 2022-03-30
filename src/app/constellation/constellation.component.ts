@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApodService } from './apod.service';
 
 @Component({
   selector: 'app-constellation',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConstellationComponent implements OnInit {
 
-  constructor() { }
+  constructor( private service : ApodService ) { }
 
   ngOnInit(): void {
+    this.service.getApod().subscribe(data=> console.log(data))
   }
 
 }
