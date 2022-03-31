@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApodService } from './apod.service';
-
+import { Store } from '@ngrx/store';
+import * as actionsCostallation from './state/costallation.actions';
+import * as  selectorCostallation from './state/costallation.selector';
 @Component({
   selector: 'app-constellation',
   templateUrl: './constellation.component.html',
@@ -8,10 +9,16 @@ import { ApodService } from './apod.service';
 })
 export class ConstellationComponent implements OnInit {
 
-  constructor( private service : ApodService ) { }
+  apod$: any | undefined;
+  constructor( private store: Store<any> ) { }
 
   ngOnInit(): void {
-    this.service.getApod().subscribe(data=> console.log(data))
+    this.store.dispatch(actionsCostallation.loadCostallation());
+    this.store.select(selectorCostallation.getList).subscribe(
+      response => {
+        this.apod$ = response;
+      }
+    );
   }
 
 }

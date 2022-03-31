@@ -1,14 +1,22 @@
 <div class="max-w-sm rounded   m-8  rounded-tl-md content-start bg-slate-300">
 
-  <img class="w-full  rounded " src=""alt="Sunset in the mountains">
 
-  <div class=" flex px-2 py-4">
-    <span class="inline-block  border-8 border-slate-100 bg-orange-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-20"></span>
-    <span>
-      <div class="iten">Piso en </div>
+<img *ngIf=" info.media_type == 'image' "   class="w-full  rounded " src="{{info.url}}"alt="{{info.url}}">
 
-        <div class=""></div>
-      </span>
-    <div class="font-bold text-xl mb-2"></div>
+
+
+<div   *ngIf=" info.media_type == 'video' " class="video-responsive">
+  <iframe width="560" height="315"
+      [src]="info_url_video | safe "
+      title="YouTube video player"
+      frameborder="0"
+     >
+  </iframe>
+</div>
+
+<div class=" flex  flex-col px-2 py-2">
+    <div class="inline-block  border-8 border-slate-200 bg-orange-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-1 mb-2">{{info.date}}</div>
+<div class="text-center font-bold">{{info.title}}</div>
+
 
 </div>

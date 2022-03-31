@@ -19,7 +19,7 @@ export class ApodService {
   }
 
   private transformDate(date = new Date()) {
-    let dateFull = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+    let dateFull = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()-1}`;
     return String(dateFull);
   }
 

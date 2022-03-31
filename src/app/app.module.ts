@@ -8,10 +8,11 @@ import { environment } from '../environments/environment';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 
+
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+   ],
   imports: [
     BrowserModule,
     HttpClientModule,

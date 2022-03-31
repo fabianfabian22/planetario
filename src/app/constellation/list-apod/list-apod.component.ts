@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Apod } from '../../shared/models/apod.model';
 
 @Component({
   selector: 'app-list-apod',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-apod.component.scss']
 })
 export class ListApodComponent implements OnInit {
-
+  @Input() data: Apod[] | undefined;
   constructor() { }
 
   ngOnInit(): void {
