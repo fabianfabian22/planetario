@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
+import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-item-apod',
   templateUrl: './item-apod.component.html',
@@ -8,7 +9,11 @@ import { DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 })
 export class ItemApodComponent implements OnInit {
   @Input() info: any | undefined;
-  info_url_video= '';;
+  info_url_video = '';
+
+  constructor(private route: Router) {
+
+  }
 
   ngOnInit(): void {
 
@@ -22,12 +27,7 @@ export class ItemApodComponent implements OnInit {
     return String(part[0]);
   }
 
-
 }
-
-
-
-
 
 @Pipe({
   name: 'safe',
