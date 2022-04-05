@@ -1,10 +1,5 @@
 <div class="max-w-sm rounded   m-8  rounded-tl-md content-start bg-slate-300">
-
-
 <img *ngIf=" info.media_type == 'image' "   class="w-full  rounded " src="{{info.url}}"alt="{{info.url}}">
-
-
-
 <div   *ngIf=" info.media_type == 'video' " class="video-responsive">
   <iframe width="560" height="315"
       [src]="info_url_video | safe "

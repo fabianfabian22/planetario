@@ -16,7 +16,7 @@ export class ItemApodComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('this.info.url: ', this.info.url);
+
     if (this.info['media_type'] === 'video')
      { this.info_url_video = this.clearUrl(this.info.url) }
   }

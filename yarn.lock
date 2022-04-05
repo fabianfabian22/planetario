@@ -153,7 +153,7 @@
     "symbol-observable" "4.0.0"
     "uuid" "8.3.2"
 
-"@angular/common@~13.0.0", "@angular/common@13.0.3":
+"@angular/common@~13.0.0", "@angular/common@13.0.3", "@angular/common@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14":
   "integrity" "sha512-xxQIQD5rWWHafKRPCgvkWvy53b+QkbJ9yAf3qYTp0gXZJMg/Cx3Ylc8LA2o1kyVJxCI/amXf5k4rr1S9yU7zxw=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-13.0.3.tgz"
   "version" "13.0.3"
@@ -184,14 +184,14 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/core@^13.0.0", "@angular/core@>=10.0.0", "@angular/core@~13.0.0", "@angular/core@13.0.3":
+"@angular/core@^13.0.0", "@angular/core@>=10.0.0", "@angular/core@~13.0.0", "@angular/core@13.0.3", "@angular/core@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14":
   "integrity" "sha512-w8FngZBPrLw9kHftYy824C/wSBtLKCWvGU04qI6V9BCpxedf7cyOIhOzaL+4Pz/rwgvo+0Qn2uM1ssZ2+JUdvQ=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-13.0.3.tgz"
   "version" "13.0.3"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/forms@~13.0.0":
+"@angular/forms@~13.0.0", "@angular/forms@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14":
   "integrity" "sha512-Sxpc9kiCYi59GzKkpvpqgUejXq7P1dt3l1C5mnV3WBdNEpVBDRD63YLlNTya+w4uSMr+WEbtCys41QO8MXNIHQ=="
   "resolved" "https://registry.npmjs.org/@angular/forms/-/forms-13.0.3.tgz"
   "version" "13.0.3"
@@ -205,7 +205,7 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/platform-browser@~13.0.0", "@angular/platform-browser@13.0.3":
+"@angular/platform-browser@~13.0.0", "@angular/platform-browser@13.0.3", "@angular/platform-browser@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14":
   "integrity" "sha512-XCeCnsD997Erl4XGNFHIqC9cTkO9uSHdaoDvLuNMsF2kr5V1GOeFkh71CYNmCsWrTj4PFqx9q+ziGgvxM4eeOQ=="
   "resolved" "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-13.0.3.tgz"
   "version" "13.0.3"
@@ -1618,9 +1618,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/jasmine@~3.10.0":
-  "integrity" "sha512-7UAoOBYJpaZKmpJ8esMUIMl6pSdReliPQjviOOikWdQ7eVr4Hq8YbpeXyfXFKflZv8ymDFhYdTjVabbP2s4K4Q=="
-  "resolved" "https://registry.npmjs.org/@types/jasmine/-/jasmine-3.10.4.tgz"
-  "version" "3.10.4"
+  "integrity" "sha512-RYxEJkk/RK1S6W0nMOx9Mxm5v2bKwAVjzTHiBcHkQskwKDqHKHjSU46jx/q9IffyuctNl8ebaAjb5/461faKqQ=="
+  "resolved" "https://registry.npmjs.org/@types/jasmine/-/jasmine-3.10.5.tgz"
+  "version" "3.10.5"
 
 "@types/jest@^27.0.0", "@types/jest@^27.4.1":
   "integrity" "sha512-23iPJADSmicDVrWk+HT58LMJtzLAnB2AgIzplQuq/bSrGaxCrlvRFjGbXmamnnk/mAmCdLStiGqggu28ocUyiw=="
@@ -4894,9 +4894,9 @@
   "version" "1.7.0"
 
 "karma-jasmine@>=1.1", "karma-jasmine@~4.0.0":
-  "integrity" "sha512-h8XDAhTiZjJKzfkoO1laMH+zfNlra+dEQHUAjpn5JV1zCPtOIVWGQjLBrqhnzQa/hrU2XrZwSyBa6XjEBzfXzw=="
-  "resolved" "https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-4.0.1.tgz"
-  "version" "4.0.1"
+  "integrity" "sha512-ggi84RMNQffSDmWSyyt4zxzh2CQGwsxvYYsprgyR1j8ikzIduEdOlcLvXjZGwXG/0j41KUXOWsUCBfbEHPWP9g=="
+  "resolved" "https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-4.0.2.tgz"
+  "version" "4.0.2"
   dependencies:
     "jasmine-core" "^3.6.0"
 
@@ -5381,6 +5381,11 @@
   "integrity" "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
+
+"ng-mocks@^13.4.0":
+  "integrity" "sha512-l4Iwg4a6CQ8w8Q0KzZ/FJVju8SqIW91GydoInR7PeDBhzO/cGAwGeHxtLPvXFKVdltgg3LzIzl88hpP+V66Gmg=="
+  "resolved" "https://registry.npmjs.org/ng-mocks/-/ng-mocks-13.4.0.tgz"
+  "version" "13.4.0"
 
 "node-emoji@^1.11.0":
   "integrity" "sha512-wo2DpQkQp7Sjm2A0cq+sN7EHKO6Sl0ctXeBdFZrL9T9+UywORbufTcTZxom8YqpLQt/FqNMUkOpkZrJVYSKD3A=="
