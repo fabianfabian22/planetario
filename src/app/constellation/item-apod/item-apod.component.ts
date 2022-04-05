@@ -8,7 +8,7 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./item-apod.component.scss']
 })
 export class ItemApodComponent implements OnInit {
-  @Input() info: any | undefined;
+  @Input() info: any | undefined = [];
   info_url_video = '';
 
   constructor(private route: Router) {
@@ -16,12 +16,11 @@ export class ItemApodComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    if (this.info.media_type == 'video')
-    { this.info_url_video = this.clearUrl(this.info.url) }
-
-
+    console.log('this.info.url: ', this.info.url);
+    if (this.info['media_type'] === 'video')
+     { this.info_url_video = this.clearUrl(this.info.url) }
   }
+
   clearUrl(url: string) {
     let part = url.split("?");
     return String(part[0]);
@@ -29,13 +28,3 @@ export class ItemApodComponent implements OnInit {
 
 }
 
-@Pipe({
-  name: 'safe',
-})
-export class SafePipe implements PipeTransform {
-  constructor(protected sanitizer: DomSanitizer) {}
-
-  public transform(value: string): SafeResourceUrl {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(value);
-  }
-}

@@ -11,28 +11,22 @@ export class DetailApodComponent implements OnInit {
   sub: any;
   apod$: any[] | undefined;
 
-  constructor(private route: ActivatedRoute , private  store : Store<any>) {}
+  constructor(private route: ActivatedRoute, private store: Store<any>) { }
 
   ngOnInit() {
 
-   this.route.params.subscribe(params => {
+    this.route.params.subscribe(params => {
+      this.store.select(selectorCostallation.getList).subscribe(
+        response => {
 
-    this.store.select(selectorCostallation.getList).subscribe(
-      response => {
+          this.apod$ = response.filter(data => data['date'] === params['date']);
 
-        this.apod$ = response.filter(data => data['date'] === params['date']);
-        console.log('  despues this.apod$ : ',   this.apod$[0] );
-      }
-    );
-
+        }
+      );
     });
 
-
-
   }
 
-  ngOnDestroy() {
-    this.sub.unsubscribe();
-  }
+
 
 }
